@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FontA-Android</string>
+
+    <string name="str_font">Font</string>
+    <string name="str_quickly_get_font_style">Quickly get the font style you want</string>
+    <string name="str_general">General</string>
+    <string name="str_privacy_policy">Privacy Policy</string>
+    <string name="str_check_our_privacy">Check our privacy policy</string>
+    <string name="str_terms_service">Terms of Service</string>
+    <string name="str_check_our_terms">Check our terms of service</string>
+    <string name="text_style">Text Style</string>
+    <string name="str_copy">Copy</string>
+    <string name="str_copy_successfully">Copy successfully</string>
+
+</resources>

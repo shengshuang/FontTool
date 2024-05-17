@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Space
+        android:id="@+id/id_top_sp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_tv_font_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftRightPadding"
+        android:fontFamily="@font/font_rubik_black"
+        android:text="@string/str_font"
+        android:textColor="@color/color_18102E"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_top_sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_small"
+        app:layout_constraintLeft_toRightOf="@id/id_tv_font_title"
+        app:layout_constraintTop_toTopOf="@id/id_tv_font_title" />
+
+    <ImageView
+        android:id="@+id/id_iv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_setting"
+        app:layout_constraintBottom_toBottomOf="@id/id_tv_font_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/id_tv_font_title" />
+
+    <EditText
+        android:id="@+id/id_edit_view"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/main_edit_view_bg"
+        android:gravity="top"
+        android:hint="@string/text_style"
+        android:padding="20dp"
+        android:shadowColor="@color/black"
+        android:textColor="@color/color_18102E"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_iv_setting" />
+
+    <ImageView
+        android:id="@+id/id_iv_clear_fork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/leftRightPadding"
+        android:layout_marginBottom="@dimen/leftRightPadding"
+        android:src="@drawable/ic_close_fork"
+        app:layout_constraintBottom_toBottomOf="@id/id_edit_view"
+        app:layout_constraintRight_toRightOf="@id/id_edit_view" />
+
+    <com.custom.relish.font.view.FontSwitchView
+        android:id="@+id/id_font_switch"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/leftRightPadding"
+        android:layout_marginTop="@dimen/leftRightPadding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_edit_view" />
+
+    <ImageView
+        android:id="@+id/id_iv_share"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="@dimen/leftRightPadding"
+        android:background="@drawable/bg_703eff_conner"
+        android:padding="10dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintBottom_toBottomOf="@id/id_font_switch"
+        app:layout_constraintRight_toLeftOf="@id/id_tv_copy"
+        app:layout_constraintTop_toTopOf="@id/id_font_switch" />
+
+    <TextView
+        android:id="@+id/id_tv_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginEnd="@dimen/leftRightPadding"
+        android:background="@drawable/bg_703eff_conner"
+        android:fontFamily="@font/font_rubik_bold"
+        android:gravity="center"
+        android:paddingStart="@dimen/leftRightPadding"
+        android:paddingEnd="@dimen/leftRightPadding"
+        android:text="@string/str_copy"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/id_font_switch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/id_font_switch" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/id_vp_font"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/leftRightPadding"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="@dimen/leftRightPadding"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_font_switch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
